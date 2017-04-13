@@ -1,3 +1,11 @@
+/**
+* Kevin's notes:  Woah this is cool!  Love the green color and the nested ellipses are great.
+More code comments inline...
+**/
+
+
+//consider using longer/more descriptive variable names:
+//for example: r -> radius , a -> xTranslation
 var r=600;
 var x,y,w;
 var a=0;
@@ -6,6 +14,13 @@ function setup() {
   createCanvas(600,600);
 
 }
+
+//great use of a function here, but you can go further
+//think about how you would write this function to take arguments/parameters.  For example,
+// instead of referencing your global variable 'r' inside the function, pass it through the function header like this:
+// function cirkle(circleRadius)
+// also, try to find a way to reduce the number of ellipse calls.  You could easily fold these into a single line inside
+// a for loop.
 function cirkle() {
     noFill();
   strokeWeight(8);
